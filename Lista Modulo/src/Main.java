@@ -1,11 +1,8 @@
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
+
 
 public class Main {
     public static void main(String[] args) {
-
-        Metodos metodos = new Metodos();
 
         Metodos.a("gabriel");
         Metodos.b(5);
