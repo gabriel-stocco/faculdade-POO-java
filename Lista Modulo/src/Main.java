@@ -13,7 +13,7 @@ public class Main {
         Metodos.d(2);
 
         Metodos.e(Arrays.asList("Maria", "Gabriel", "João", "Carlos"));
-        System.out.println(metodos.f(Arrays.asList(5,6,9,12,2,5,15,23,65,79,156,56,9,51,65,49,15,56,49,15,56,591,86)));
+        System.out.println(Metodos.f(Arrays.asList(5,6,9,12,2,5,15,23,65,79,156,56,9,51,65,49,15,56,49,15,56,591,86)));
 
         int[] numeros = {5,9,3,8,1,6,8};
         System.out.println(Metodos.g(numeros));

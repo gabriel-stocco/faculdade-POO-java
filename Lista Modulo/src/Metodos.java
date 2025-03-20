@@ -5,10 +5,10 @@ import java.util.List;
 public class Metodos {
 
     public static void a(String x){
-
         String[] letras = x.split("");
-        for (String letra : letras)
+        for (String letra : letras){
         System.out.println(letra);
+        }
     }
 
     public static void b(int n){
@@ -32,35 +32,17 @@ public class Metodos {
     }
 
     public static void d(int n){
-         String dia;
+         String dia = switch (n) {
+             case 1 -> "Domingo";
+             case 2 -> "Segunda";
+             case 3 -> "Terça";
+             case 4 -> "Quarta";
+             case 5 -> "Quinta";
+             case 6 -> "Sexta";
+             case 7 -> "Sábado";
+             default -> "Inválido";
+         };
 
-            switch (n) {
-
-                case 1:
-                    dia = "Domingo";
-                    break;
-                case 2:
-                    dia = "Segunda";
-                    break;
-                case 3:
-                    dia = "Terça";
-                    break;
-                case 4:
-                    dia = "Quarta";
-                    break;
-                case 5:
-                    dia = "Quinta";
-                    break;
-                case 6:
-                    dia = "Sexta";
-                    break;
-                case 7:
-                    dia = "Sábado";
-                    break;
-                default:
-                    dia = "Inválido";
-                    break;
-            }
         System.out.println("O dia da semana referente ao número é: " + dia);
     }
 
@@ -93,9 +75,8 @@ public class Metodos {
         for (double nota: notas){
             soma += nota ;
         }
-        double media = soma/notas.toArray().length;
 
-        return media;
+        return soma/notas.toArray().length;
     }
     public static List<Integer> i(int n1, int n2){
         List<Integer> lista = new ArrayList<>();
